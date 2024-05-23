@@ -1,3 +1,4 @@
+
 from fastapi import FastAPI
 import json, os
 from pydantic import BaseModel
@@ -9,3 +10,5 @@ app = FastAPI()
 @app.get("/")
 async def test():
     return {"message": "OK"}
+
+uvicorn main:app --reload --port=8001
