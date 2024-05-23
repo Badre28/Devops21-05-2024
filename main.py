@@ -11,4 +11,4 @@ app = FastAPI()
 async def test():
     return {"message": "OK"}
 
-uvicorn main:app --reload --port=8001
+
