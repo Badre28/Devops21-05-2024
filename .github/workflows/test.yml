@@ -1,4 +1,4 @@
-name: FastAPI test
+name: FastAPI test 
 
 on:
   push:
@@ -24,8 +24,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r ./requirements.txt
 
-      - name: Start Backend Server 
-        run: uvicorn app.main:app --reload &
+      - name: Start Backend Server
+        run: uvicorn app.main:app --reload & 
 
       #add some test
       - name: Test with pytest
