@@ -24,7 +24,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r ./requirements.txt
 
-      - name: Start Backend Server
+      - name: Start Backend Server 
         run: uvicorn app.main:app --reload &
 
       #add some test
